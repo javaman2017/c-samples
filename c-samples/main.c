@@ -8,12 +8,27 @@
 
 #include <stdio.h>
 
-int main(){
+/* print Fahrenheit-Celsius table
+ * for fahr = 0, 20, ..., 300
+ */
+void fahr_to_celsius_table(){
+	int fahr, celsius;
 
-	int i;
+	int lower = 0;		/* lower limit of temperature table */
+	int upper = 300; 	/* upper limit */
+	int step = 20;
 
-	for(i = 0;  i < 10; i++)
-	   printf("Hello, world!\n");
-	return 0;
+	fahr = lower;
+	while(fahr <= upper){
+		celsius = 5 * (fahr - 32) / 9;
+		printf("%d\t%d\n", fahr, celsius);
+		fahr = fahr + step;
+	}
 }
+
+int main(){
+	fahr_to_celsius_table();
+}
+
+
 
