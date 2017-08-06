@@ -12,7 +12,8 @@
  * for fahr = 0, 20, ..., 300
  */
 void fahr_to_celsius_table(){
-	int fahr, celsius;
+	int fahr = 0;
+	int celsius = 0;
 
 	int lower = 0;		/* lower limit of temperature table */
 	int upper = 300; 	/* upper limit */
@@ -31,9 +32,10 @@ void fahr_to_celsius_table(){
  * for cel = -17, -6, ..., 148
  */
 void celsius_to_fahr_table(){
-	int celsius, fahr;
+	int celsius = 0;
+	int fahr = 0;
 
-	int lower = -17;		/* lower limit of temperature table */
+	int lower = -17;	/* lower limit of temperature table */
 	int upper = 148; 	/* upper limit */
 	int step = 11;
 
